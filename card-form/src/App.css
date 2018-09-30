@@ -1,28 +1,99 @@
-.App {
+
+.credit-card-form {
+  border: 1px solid #757070;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  padding: 30px;
+  background-color: #e2e0e0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.credit-card-form .form-title {
   text-align: center;
+  margin-bottom: 20px;
+  font-size: 25px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.credit-card-form * {
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.credit-card-form .cards {
+  height: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.credit-card-form .button-container {
+  height: 100px;
+}
+
+.credit-card-form .text-field {
+  margin-bottom: 1px;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 380px;
+  border: 1px solid #757070;
+}
+
+.credit-card-form .form-note {
+  color: red;
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+.text-field.error {
+  border-color: red;
+}
+
+.text-field-container {
+  height: 70px;
+}
+
+.text-field-container .hint {
+  color: red;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.text-field {
+  border: 1px solid green;
+  height: 40px;
+  width: 100%;
+}
+
+.nested-fields .text-field {
+  width: 180px;
+}
+
+.credit-card-form .nested-fields {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nested-fields .text-field-container {
+  width: 200px;
+}
+.credit-card-form-button.submit-button {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  border: 1px solid #757070;
+  height: 50px;
   color: white;
+  background-color: #c492e8;
 }
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.credit-card-form-button.submit-button:hover {
+  background-color: #7910b2;
+  cursor: pointer;
 }
